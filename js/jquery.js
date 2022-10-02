@@ -9335,7 +9335,7 @@
 
   jQuery.fx.start = function() {
     if ( !timerId ) {
-      timerId = setInterval( jQuery.fx.tick, jQuery.fx.interval );
+      timerId = set( jQuery.fx.tick, jQuery.fx.interval );
     }
   };
 

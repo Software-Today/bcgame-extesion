@@ -1,11 +1,11 @@
 {
-    "name": "Auto Reload Slack",
+    "name": "bc.game Simple Dice Auto Bet",
     "version": "1.0",
     "manifest_version": 3,
     "action": {
-      "default_title": "This is action"
+      "default_title": "Auto Bet for Simple Dice"
     },
-    "description" : "We can auto reload Slack Messanger.",
+    "description" : "We bet automatically in simple dice.",
     "icons": {    
         "128": "images/logo.png",
         "16": "images/logo_16.png",
@@ -22,7 +22,7 @@
           "<all_urls>"
         ],
     "background": {
-      "service_worker": "backgrondServices/freelancer.js"
+      "service_worker": "backgrondServices/autobet.js"
     },
     "content_scripts": [ {
       "matches": ["https://*/*"],

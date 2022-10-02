@@ -5,16 +5,15 @@ let visitedURL = [];
 
 const filter = {
     url: [
-        {hostContains: "slack.com"},
+        {hostContains: "https://bc.game/game/classic-dice"},
     ],
 };
 
 chrome.webNavigation.onCompleted.addListener((details) => {                        //on document ready event
-    
     chrome.scripting.executeScript(
     {
         target: {tabId: details.tabId},
-        files:['js/autoBidInFreelancer.js']
+        files:['js/history.js']
     },
     (injectionResults) => {
         
